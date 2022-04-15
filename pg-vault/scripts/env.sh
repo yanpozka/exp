@@ -8,4 +8,4 @@ export PG_PORT=5432
 export PG_USER=$PG_USER
 export PG_DBNAME=$PG_DBNAME
 
-export VAULT_SECRET_PATH=database/creds/readonly
+export VAULT_SECRET_PATH=database/creds/$ROLE_NAME

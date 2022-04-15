@@ -55,7 +55,7 @@ func getDBUserPass() (username, passwd string, err error) {
 	client.SetToken(vaultToken)
 
 	var secret *api.Secret
-	secret, err = client.Logical().Read(getOrDefault("VAULT_SECRET_PATH", "database/creds/readonly"))
+	secret, err = client.Logical().Read(getOrDefault("VAULT_SECRET_PATH", "database/creds/readonly_role"))
 	if err != nil {
 		return
 	}
