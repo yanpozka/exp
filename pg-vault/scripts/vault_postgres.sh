@@ -30,4 +30,4 @@ vault write database/roles/$ROLE_NAME \
 
 # to get user/password
 # 
-# vault read database/creds/readonly_role
+# vault read database/creds/$ROLE_NAME
